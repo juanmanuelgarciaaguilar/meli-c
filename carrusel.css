@@ -1,0 +1,139 @@
+
+body {
+    background-color: azure;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: rgb(153, 196, 153);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  border: 1px black solid;
+}
+
+#menu {
+    display: flex;
+    gap: 50px;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    transition: background-color 0.6s ease;
+}
+
+#menu li a:hover {
+    background: rgba(153, 196, 153, 0.5);
+}
+
+/* Estilo del pie de página */
+#pie{
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    background: rgb(153, 196, 153);
+  border: 1px black solid;
+}
+
+
+#redes {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#redes li {
+    margin: 0 10px;
+}
+
+#redes li img {
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo {
+    background-color: gray;
+    text-align: center;
+    font-family: cursive;
+    width: 100%;
+    height: 70px;
+}
+
+/* Contenedor para dividir la pantalla en dos columnas */
+.carousel-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel {
+    position: relative;
+    max-width: 45%; /* Ajusta el tamaño del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  border: 1px black solid;
+}
+.carousel strong{
+  margin-left: 20px;
+  text-align: center;
+  font-family: serif;
+  font-size: 25px;
+}
+.carousel p{
+  text-align: center;
+  font-family: serif;
+  font-size: 20px;
+}
+/* Estilos para las diapositivas */
+.slide {
+    display: none; /* Oculta todas las diapositivas por defecto */
+}
+
+/* Estilos para diapositiva activa (visible) */
+.slide.active {
+    display: block; /* Muestra la diapositiva activa */
+}
+
+/* Estilos para los botones de navegación */
+button {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Estilos para el botón de navegación izquierdo */
+.prev {
+    left: 0;
+}
+
+/* Estilos para el botón de navegación derecho */
+.next {
+    right: 0;
+}
+    
